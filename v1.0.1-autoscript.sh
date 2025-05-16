@@ -183,7 +183,7 @@ sudo systemctl enable lumerad
 
 # Initialize the node
 printGreen "7. Initializing the node..."
-atomoned init $MONIKER --chain-id $LUMERA_CHAIN_ID
+lumerad init $MONIKER --chain-id $LUMERA_CHAIN_ID
 sed -i \
 -e "s/chain-id = .*/chain-id = \"lumera-testnet-1\"/" \
 -e "s/keyring-backend = .*/keyring-backend = \"os\"/" \
