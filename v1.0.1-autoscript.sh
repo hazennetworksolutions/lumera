@@ -234,7 +234,7 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"19\"/" $HOME/.lumera/co
 cp $HOME/.lumera/data/priv_validator_state.json $HOME/.lumera/priv_validator_state.json.backup
 rm -rf $HOME/.lumera/data
 curl https://server-9.hazennetworksolutions.com/lumera-testnet-snapshot.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.lumera
-mv $HOME/.atomone/priv_validator_state.json.backup $HOME/.atomone/data/priv_validator_state.json
+mv $HOME/.lumera/priv_validator_state.json.backup $HOME/.lumera/data/priv_validator_state.json
 
 
 # Start the node
