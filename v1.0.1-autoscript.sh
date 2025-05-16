@@ -235,7 +235,7 @@ cp $HOME/.lumera/data/priv_validator_state.json $HOME/.lumera/priv_validator_sta
 rm -rf $HOME/.lumera/data
 curl https://server-9.hazennetworksolutions.com/lumera-testnet-snapshot.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.lumera
 mv $HOME/.lumera/priv_validator_state.json.backup $HOME/.lumera/data/priv_validator_state.json
-
+wget -O $HOME/.lumera/cosmovisor/genesis/upgrade-info.json https://server-9.hazennetworksolutions.com/upgrade-info.json
 
 # Start the node
 printGreen "13. Starting the node..."
